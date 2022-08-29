@@ -1,3 +1,5 @@
+// ignore_for_file: non_constant_identifier_names
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -44,15 +46,15 @@ class _HomeState extends State<Home> {
     // This method is rerun every time setState is called
     return Scaffold(
         body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Text(widget.title),
-              const Text(
-                'Welcome to Git Q!',
-              )
-            ],
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Text(widget.title),
+          const Text(
+            'Welcome to Git Q!',
           ),
-        ));
+        ],
+      ),
+    ));
   }
 }
