@@ -1,2 +1,3 @@
-# gitq
+# Git Q
+
 Alternative Git frontend
