@@ -10,16 +10,16 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Git Q',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Home(title: 'Flutter Demo Home Page'),
+      home: const Home(title: 'Home'),
     );
   }
 }
 
-// _ Underscores = "local"
+// _ Underscores = local field
 
 class Home extends StatefulWidget {
   const Home({Key? key, required this.title}) : super(key: key);
@@ -43,14 +43,12 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called
     return Scaffold(
-        appBar: AppBar(
-          title: Text(widget.title),
-        ),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: const <Widget>[
-              Text(
+            children: <Widget>[
+              Text(widget.title),
+              const Text(
                 'Welcome to Git Q!',
               )
             ],
