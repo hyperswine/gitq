@@ -1,7 +1,11 @@
 use arcen::common::*
 
 fn main() {
-    arcen::render(
-        "index.rei"
-    )
+    arcen::render(app)
+}
+
+fn app(children: ArcenProps) -> Component {
+    @arcen {
+        ArcenPage[...children]
+    }
 }
