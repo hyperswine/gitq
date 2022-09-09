@@ -1,0 +1,6 @@
+[style.rei]
+spacing = "tabs"
+size = "2"
+
+[preset]
+arcen = true
